@@ -6,13 +6,14 @@ let button = document.querySelector(".password-check");
 // as an input, and return true if the password is correct
 
 
-button.addEventListener("click", function() {
 
+button.addEventListener("click", function() {
+    let rightpassword = "squirrelly";
     let password = document.querySelector(".password-input").value;
 
     // 2 - Call your function here, store the result in a variable
     // and use the variable to determine which message to display
-    if () {
+    if (password === rightpassword) {
         document.querySelector(".yes").style = "display:block";
         document.querySelector(".denied").style = "display:none";
     } else {
